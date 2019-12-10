@@ -1,0 +1,906 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="x-apple-disable-message-reformatting">
+<!--[if !mso]><!-->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!--<![endif]-->
+<!--[if gte mso 9]><xml>
+<o:OfficeDocumentSettings>
+<o:AllowPNG/>
+<o:PixelsPerInch>96</o:PixelsPerInch>
+</o:OfficeDocumentSettings>
+</xml><![endif]-->
+
+<title>This game is awesome.</title> <!-- please also duplicate the preheader copy and place inside title tag -->
+
+<style type="text/css">
+body { 
+  width:100% !important;
+  min-width:100%;
+  height:100% !important;
+  Margin: 0; /* keep capitalized to deal with Outlook */
+  padding: 0;
+  background-color:#ffffff;
+  -webkit-font-smoothing: antialiased; 
+}
+img { 
+  border: 0; 
+}
+table { 
+  mso-table-lspace: 0pt; 
+  mso-table-rspace: 0pt; 
+  border-collapse: collapse !important; 
+  border-spacing:0;
+}
+p {
+  margin: 0; 
+  -webkit-font-smoothing:antialiased;
+}
+body, table, td, a { 
+  -ms-text-size-adjust: 100%; 
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing:antialiased;
+}
+a[x-apple-data-detectors] { 
+  color: inherit !important; 
+  text-decoration: none !important; 
+  font-size: inherit !important; 
+  font-family: inherit !important; 
+  font-weight: inherit !important; 
+  line-height: inherit !important; 
+}
+span.MsoHyperlink { mso-style-priority: 99; color: inherit; }
+span.MsoHyperlinkFollowed { mso-style-priority: 99; color: inherit; }
+
+.phonefix, .phonefix a,.phonefix span a,.phonefix span {color: #4c4c4c !important; text-decoration: none;}
+.phonefix2, .phonefix2 a,.phonefix2 span a,.phonefix2 span{color: #000000 !important; text-decoration: none;}
+/* a > div {display: block !important;} */
+
+/* Fallback styles */
+#game-wrapper { display: none !important; }
+
+/* game styles */
+@media only screen and (-webkit-min-device-pixel-ratio: 0) {
+  #master-control:checked ~ #game-fallback { display: none !important; }
+  .game-padding { padding: 10%; }
+
+  #master-control:checked ~ #game-wrapper {
+    display: block !important;
+    max-height: none !important;
+    max-width: none !important;
+    padding: 7% 10%;
+    height: 580px;
+    background-color: #000000;
+  } 
+
+  label { cursor: pointer; }
+
+  #game-questions-wrapper { 
+    display: none;
+    height: 487px;
+  }
+    .game-questions { display: none; }
+    #game-questions-text { height: 300px; }
+
+  .icon-container {
+    width: 90px;
+  }
+  .icon-container img {
+    z-index: 99999;
+  }
+  .icon-bar-container {
+    /* width: 89px; */
+    height: 90px;
+    margin: -90px 0 10px 0;
+  }
+    .icon-bar {
+      width: 100%;
+      height: 50%;
+      margin-top: -90px;
+      background-color: #000000;
+      transition: .3s ease-out;
+    }
+    /* #icon_health_bar { height: 30%; } */
+    .icon-bar_bg {
+      width: 100%;
+      height: 100%;
+      background-color: #e20074;    
+    }
+  .icon-bar-container_value {
+    text-align: center;
+  }
+  .button-label {
+    width: 120px;
+  }
+
+  /* mobile styles */
+  @media only screen and (max-width: 599px) {
+    .container {width: 360px !important; min-width: 360px !important; max-width: 360px !important;}
+    .view-online { width: 90% !important; padding-left: 5% !important; padding-right: 5% !important;}
+    .hide {display: none !important;}
+    .img-fluid { width: 100% !important; }
+    .img-logo { width: 130px !important; }
+    .fluid-padding {padding-left: 5% !important; padding-right: 5% !important;}
+
+    .game-padding { padding: 7%; }
+
+    #game-questions-wrapper { 
+      height: 360px;
+    }
+    #game-questions-text { height: 215px; }
+
+    .text-headline,
+    #game-questions-text p::before { font-size:24px !important; line-height:25px !important; }
+    .text-body,
+    #game-questions-text p::after { font-size:14px !important; line-height:19px !important; }
+
+    .icon-bar-container {
+      height: 62px;
+      margin-top: -62px;
+    }
+      .icon-bar {
+        margin-top: -62px;
+      }
+      .icon-bar_bg {
+        height: 62px; /* Hack for Android native - needs hard height */
+      }
+    .icon-bar-gradient {
+      height: 62px;
+      margin-top: -62px;
+    }
+
+      .icon-bar-container_value p {
+        font-size: 14px !important;
+        line-height: 14px !important;
+      }
+
+    #master-control:checked ~ #game-wrapper { 
+      padding: 7% 7%;
+      height: 408px;
+    }
+    .icon-container { width: 55px; }
+    .button-label { width: 60%; }
+  }
+
+  @media only screen and (max-width: 359px) {
+    .container {width: 320px !important; min-width: 320px !important; max-width: 320px !important;}
+    .game-padding { padding: 6%; }
+
+    #game-questions-text { height: 197px; }
+
+    .icon-bar-container {
+      height: 55px;
+      margin-top: -55px;
+    }
+      .icon-bar {
+        margin-top: -55px;
+      }
+      .icon-bar_bg {
+        height: 55px; /* Hack for Android native - needs hard height */
+      }
+    .icon-bar-gradient {
+      height: 55px;
+      margin-top: -55px;
+    }
+
+    #master-control:checked ~ #game-wrapper {
+      height: 378px;
+    }
+  }
+
+  /* GAME SELECTORS */
+
+  #game-questions-text { padding: 10% 0 5% 0; }
+
+  #game-questions-text p::before {
+    font-family:Arial,sans-serif;
+    font-size: 30px;
+    line-height: 35px;
+    color: #e20074;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 18px;
+  }
+
+  #game-questions-text p::after {
+    font-family:Arial,sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    color: #ffffff;
+  }
+
+
+  /* Start */
+  #button-start:checked ~ #game-start { display: none; }
+  #button-start:checked ~ #game-questions-wrapper { display: block !important; }
+  #button-start:checked ~ #game-questions-wrapper #popularity_value p::before { content: "50%" }
+  #button-start:checked ~ #game-questions-wrapper #health_value p::before { content: "50%" }
+  #button-start:checked ~ #game-questions-wrapper #safety_value p::before { content: "50%" }
+  #button-start:checked ~ #game-questions-wrapper #game-questions-text p::before { content: "CHALLENGE 1"; }
+  #button-start:checked ~ #game-questions-wrapper #game-questions-text p::after { content: "Question"; }
+
+  /* Question 1 */
+  #button-2a:checked ~ #game-questions-wrapper #question1 { display: none; }
+  #button-2a:checked ~ #game-questions-wrapper #question2a { display: block !important; }
+  #button-2a:checked ~ #game-questions-wrapper #icon_health_bar { height: 40%; }
+  #button-2a:checked ~ #game-questions-wrapper #icon_safety_bar { height: 30%; }
+  #button-2a:checked ~ #game-questions-wrapper #health_value p::before { content: "60%" }
+  #button-2a:checked ~ #game-questions-wrapper #safety_value p::before { content: "70%" }
+  #button-2a:checked ~ #game-questions-wrapper #game-questions-text p::before { content: "CHALLENGE 2a"; }
+  #button-2a:checked ~ #game-questions-wrapper #game-questions-text p::after { content: "Question"; }
+
+  #button-2b:checked ~ #game-questions-wrapper #question1 { display: none; }
+  #button-2b:checked ~ #game-questions-wrapper #question2b { display: block !important; }
+  #button-2b:checked ~ #game-questions-wrapper #icon_popularity_bar { height: 30%; }
+  #button-2b:checked ~ #game-questions-wrapper #icon_health_bar { height: 60%; }
+  #button-2b:checked ~ #game-questions-wrapper #icon_safety_bar { height: 60%; }
+  #button-2b:checked ~ #game-questions-wrapper #popularity_value p::before { content: "70%" }
+  #button-2b:checked ~ #game-questions-wrapper #health_value p::before { content: "40%" }
+  #button-2b:checked ~ #game-questions-wrapper #safety_value p::before { content: "40%" }
+  #button-2b:checked ~ #game-questions-wrapper #game-questions-text p::before { content: "CHALLENGE 2b"; }
+  #button-2b:checked ~ #game-questions-wrapper #game-questions-text p::after { content: "Question"; }
+
+  /* Question 2 */
+  #button-3a:checked ~ #game-questions-wrapper #question2a { display: none !important; }
+  #button-3a:checked ~ #game-questions-wrapper #question3a { display: block !important; }
+  #button-3a:checked ~ #game-questions-wrapper #icon_popularity_bar { height: 40%; }
+  #button-3a:checked ~ #game-questions-wrapper #icon_health_bar { height: 30%; }
+  #button-3a:checked ~ #game-questions-wrapper #icon_safety_bar { height: 20%; }
+  #button-3a:checked ~ #game-questions-wrapper #popularity_value p::before { content: "60%" }
+  #button-3a:checked ~ #game-questions-wrapper #health_value p::before { content: "70%" }
+  #button-3a:checked ~ #game-questions-wrapper #safety_value p::before { content: "80%" }
+  #button-3a:checked ~ #game-questions-wrapper #game-questions-text p::before { content: "CHALLENGE 3a"; }
+  #button-3a:checked ~ #game-questions-wrapper #game-questions-text p::after { content: "Question"; }
+
+  #button-3m:checked ~ #game-questions-wrapper #question2a { display: none !important; }
+  #button-3m:checked ~ #game-questions-wrapper #question2b { display: none !important; }
+  #button-3m:checked ~ #game-questions-wrapper #question3m { display: block !important; }
+  #button-3m:checked ~ #game-questions-wrapper #icon_popularity_bar { height: 40%; }
+  #button-3m:checked ~ #game-questions-wrapper #icon_health_bar { height: 50%; }
+  #button-3m:checked ~ #game-questions-wrapper #icon_safety_bar { height: 50%; }
+  #button-3m:checked ~ #game-questions-wrapper #popularity_value p::before { content: "60%" }
+  #button-3m:checked ~ #game-questions-wrapper #health_value p::before { content: "50%" }
+  #button-3m:checked ~ #game-questions-wrapper #safety_value p::before { content: "50%" }
+  #button-3m:checked ~ #game-questions-wrapper #game-questions-text p::before { content: "CHALLENGE 3m"; }
+  #button-3m:checked ~ #game-questions-wrapper #game-questions-text p::after { content: "Question"; }
+
+  #button-3b:checked ~ #game-questions-wrapper #question2b { display: none !important; }
+  #button-3b:checked ~ #game-questions-wrapper #question3b { display: block !important; }
+  #button-3b:checked ~ #game-questions-wrapper #icon_health_bar { height: 70%; }
+  #button-3b:checked ~ #game-questions-wrapper #icon_safety_bar { height: 80%; }
+  #button-3b:checked ~ #game-questions-wrapper #health_value p::before { content: "30%" }
+  #button-3b:checked ~ #game-questions-wrapper #safety_value p::before { content: "20%" }
+  #button-3b:checked ~ #game-questions-wrapper #game-questions-text p::before { content: "CHALLENGE 3b"; }
+  #button-3b:checked ~ #game-questions-wrapper #game-questions-text p::after { content: "Question"; }
+
+  /* Question 3 */
+  #button-4a:checked ~ #game-questions-wrapper #question3a { display: none !important; }
+  #button-4a:checked ~ #game-questions-wrapper #question4a { display: block !important; }
+  #button-4a:checked ~ #game-questions-wrapper #icon_popularity_bar { height: 30%; }
+  #button-4a:checked ~ #game-questions-wrapper #icon_health_bar { height: 20%; }
+  #button-4a:checked ~ #game-questions-wrapper #icon_safety_bar { height: 10%; }
+  #button-4a:checked ~ #game-questions-wrapper #popularity_value p::before { content: "70%" }
+  #button-4a:checked ~ #game-questions-wrapper #health_value p::before { content: "80%" }
+  #button-4a:checked ~ #game-questions-wrapper #safety_value p::before { content: "90%" }
+  #button-4a:checked ~ #game-questions-wrapper #game-questions-text p::before { content: "CHALLENGE 4a"; }
+  #button-4a:checked ~ #game-questions-wrapper #game-questions-text p::after { content: "Question"; }
+
+  #button-4b:checked ~ #game-questions-wrapper #question3a { display: none !important; }
+  #button-4b:checked ~ #game-questions-wrapper #question3m { display: none !important; }
+  #button-4b:checked ~ #game-questions-wrapper #question4b { display: block !important; }
+  #button-4b:checked ~ #game-questions-wrapper #icon_popularity_bar { height: 50%; }
+  #button-4b:checked ~ #game-questions-wrapper #icon_health_bar { height: 40%; }
+  #button-4b:checked ~ #game-questions-wrapper #icon_safety_bar { height: 40%; }
+  #button-4b:checked ~ #game-questions-wrapper #popularity_value p::before { content: "50%" }
+  #button-4b:checked ~ #game-questions-wrapper #health_value p::before { content: "60%" }
+  #button-4b:checked ~ #game-questions-wrapper #safety_value p::before { content: "60%" }
+  #button-4b:checked ~ #game-questions-wrapper #game-questions-text p::before { content: "CHALLENGE 4b"; }
+  #button-4b:checked ~ #game-questions-wrapper #game-questions-text p::after { content: "Question"; }
+
+  #button-4c:checked ~ #game-questions-wrapper #question3m { display: none !important; }
+  #button-4c:checked ~ #game-questions-wrapper #question3b { display: none !important; }
+  #button-4c:checked ~ #game-questions-wrapper #question4c { display: block !important; }
+  #button-4c:checked ~ #game-questions-wrapper #icon_popularity_bar { height: 40%; }
+  #button-4c:checked ~ #game-questions-wrapper #icon_health_bar { height: 60%; }
+  #button-4c:checked ~ #game-questions-wrapper #icon_safety_bar { height: 70%; }
+  #button-4c:checked ~ #game-questions-wrapper #popularity_value p::before { content: "60%" }
+  #button-4c:checked ~ #game-questions-wrapper #health_value p::before { content: "40%" }
+  #button-4c:checked ~ #game-questions-wrapper #safety_value p::before { content: "30%" }
+  #button-4c:checked ~ #game-questions-wrapper #game-questions-text p::before { content: "CHALLENGE 4c"; }
+  #button-4c:checked ~ #game-questions-wrapper #game-questions-text p::after { content: "Question"; }
+
+  #button-4d:checked ~ #game-questions-wrapper #question3m { display: none !important; }
+  #button-4d:checked ~ #game-questions-wrapper #question3b { display: none !important; }
+  #button-4d:checked ~ #game-questions-wrapper #question4d { display: block !important; }
+  #button-4d:checked ~ #game-questions-wrapper #icon_popularity_bar { height: 60%; }
+  #button-4d:checked ~ #game-questions-wrapper #icon_health_bar { height: 80%; }
+  #button-4d:checked ~ #game-questions-wrapper #icon_safety_bar { height: 90%; }
+  #button-4d:checked ~ #game-questions-wrapper #popularity_value p::before { content: "40%" }
+  #button-4d:checked ~ #game-questions-wrapper #health_value p::before { content: "20%" }
+  #button-4d:checked ~ #game-questions-wrapper #safety_value p::before { content: "10%" }
+  #button-4d:checked ~ #game-questions-wrapper #game-questions-text p::before { content: "CHALLENGE 4d"; }
+  #button-4d:checked ~ #game-questions-wrapper #game-questions-text p::after { content: "Question"; }
+
+  /* Question 4 */
+  #button-end1:checked ~ #game-questions-wrapper #question4a { display: none !important; }
+  #button-end1:checked ~ #game-questions-wrapper #icon_popularity_bar { height: 20%; }
+  #button-end1:checked ~ #game-questions-wrapper #icon_health_bar { height: 0; }
+  #button-end1:checked ~ #game-questions-wrapper #icon_safety_bar { height: 0; }
+  #button-end1:checked ~ #game-questions-wrapper #popularity_value p::before { content: "80%" }
+  #button-end1:checked ~ #game-questions-wrapper #health_value p::before { content: "100%" }
+  #button-end1:checked ~ #game-questions-wrapper #safety_value p::before { content: "100%" }
+  #button-end1:checked ~ #game-questions-wrapper #game-questions-text p::before { content: "YOU WON!"; }
+  #button-end1:checked ~ #game-questions-wrapper #game-questions-text p::after { content: "Safety is in your blood. Congratulations!"; }
+
+  #button-end2:checked ~ #game-questions-wrapper #question4a { display: none !important; }
+  #button-end2:checked ~ #game-questions-wrapper #question4b { display: none !important; }
+  #button-end2:checked ~ #game-questions-wrapper #icon_popularity_bar { height: 30%; }
+  #button-end2:checked ~ #game-questions-wrapper #icon_health_bar { height: 30%; }
+  #button-end2:checked ~ #game-questions-wrapper #icon_safety_bar { height: 20%; }
+  #button-end2:checked ~ #game-questions-wrapper #popularity_value p::before { content: "70%" }
+  #button-end2:checked ~ #game-questions-wrapper #health_value p::before { content: "70%" }
+  #button-end2:checked ~ #game-questions-wrapper #safety_value p::before { content: "80%" }
+  #button-end2:checked ~ #game-questions-wrapper #game-questions-text p::before { content: "YOU WON!"; }
+  #button-end2:checked ~ #game-questions-wrapper #game-questions-text p::after { content: "Despite a few missteps, you pulled through mostly unscathed."; }
+
+  #button-end3:checked ~ #game-questions-wrapper #question4c { display: none !important; }
+  #button-end3:checked ~ #game-questions-wrapper #question4d { display: none !important; }
+  #button-end3:checked ~ #game-questions-wrapper #icon_popularity_bar { height: 50%; }
+  #button-end3:checked ~ #game-questions-wrapper #icon_health_bar { height: 70%; }
+  #button-end3:checked ~ #game-questions-wrapper #icon_safety_bar { height: 80%; }
+  #button-end3:checked ~ #game-questions-wrapper #popularity_value p::before { content: "50%" }
+  #button-end3:checked ~ #game-questions-wrapper #health_value p::before { content: "30%" }
+  #button-end3:checked ~ #game-questions-wrapper #safety_value p::before { content: "20%" }
+  #button-end3:checked ~ #game-questions-wrapper #game-questions-text p::before { content: "YOU LOST"; }
+  #button-end3:checked ~ #game-questions-wrapper #game-questions-text p::after { content: "You were safe ... but not safe enough. Next time, take fewer risks!"; }
+
+  #button-end4:checked ~ #game-questions-wrapper #question4d { display: none !important; }
+  #button-end4:checked ~ #game-questions-wrapper #icon_popularity_bar { height: 80%; }
+  #button-end4:checked ~ #game-questions-wrapper #icon_health_bar { height: 100%; }
+  #button-end4:checked ~ #game-questions-wrapper #icon_safety_bar { height: 100%; }
+  #button-end4:checked ~ #game-questions-wrapper #popularity_value p::before { content: "20%" }
+  #button-end4:checked ~ #game-questions-wrapper #health_value p::before { content: "0%" }
+  #button-end4:checked ~ #game-questions-wrapper #safety_value p::before { content: "0%" }
+  #button-end4:checked ~ #game-questions-wrapper #game-questions-text p::before { content: "YOU LOST"; }
+  #button-end4:checked ~ #game-questions-wrapper #game-questions-text p::after { content: "Sorry! It's important to think twice before sharing links from your phone."; }
+
+  /* Tiebreaker */
+  #button-tie:checked ~ #game-questions-wrapper #question4b { display: none !important; }
+  #button-tie:checked ~ #game-questions-wrapper #question4c { display: none !important; }
+  #button-tie:checked ~ #game-questions-wrapper #question-tie { display: block !important; }
+  #button-tie:checked ~ #game-questions-wrapper #icon_popularity_bar { height: 50%; }
+  #button-tie:checked ~ #game-questions-wrapper #icon_health_bar { height: 50%; }
+  #button-tie:checked ~ #game-questions-wrapper #icon_safety_bar { height: 50%; }
+  #button-tie:checked ~ #game-questions-wrapper #popularity_value p::before { content: "50%" }
+  #button-tie:checked ~ #game-questions-wrapper #health_value p::before { content: "50%" }
+  #button-tie:checked ~ #game-questions-wrapper #safety_value p::before { content: "50%" }
+  #button-tie:checked ~ #game-questions-wrapper #game-questions-text p::before { content: "YOU'RE TIED!"; }
+  #button-tie:checked ~ #game-questions-wrapper #game-questions-text p::after { content: "Tiebreaker question"; }
+
+  #button-end5:checked ~ #game-questions-wrapper #question-tie { display: none !important; }
+  #button-end5:checked ~ #game-questions-wrapper #icon_health_bar { height: 40%; }
+  #button-end5:checked ~ #game-questions-wrapper #icon_safety_bar { height: 30%; }
+  #button-end5:checked ~ #game-questions-wrapper #health_value p::before { content: "60%" }
+  #button-end5:checked ~ #game-questions-wrapper #safety_value p::before { content: "70%" }
+  #button-end5:checked ~ #game-questions-wrapper #game-questions-text p::before { content: "YOU WON!"; }
+  #button-end5:checked ~ #game-questions-wrapper #game-questions-text p::after { content: "Despite a few missteps, you pulled through mostly unscathed."; }
+
+  #button-end6:checked ~ #game-questions-wrapper #question-tie { display: none !important; }
+  #button-end6:checked ~ #game-questions-wrapper #icon_health_bar { height: 60%; }
+  #button-end6:checked ~ #game-questions-wrapper #icon_safety_bar { height: 70%; }
+  #button-end6:checked ~ #game-questions-wrapper #health_value p::before { content: "40%" }
+  #button-end6:checked ~ #game-questions-wrapper #safety_value p::before { content: "30%" }
+  #button-end6:checked ~ #game-questions-wrapper #game-questions-text p::before { content: "YOU LOST"; }
+  #button-end6:checked ~ #game-questions-wrapper #game-questions-text p::after { content: "You were safe ... but not safe enough. Next time, take fewer risks!"; }
+}
+</style>
+</head>
+
+<body>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tr>
+    <td bgcolor="#ffffff" align="center">
+
+      <!-- wrapper table -->
+      <table role="presentation" class="container" style="text-align:left;width:600px;min-width:600px;margin:0 auto;padding:0;" align="center" border="0" cellpadding="0" cellspacing="0" width="600">
+        <tr>
+          <td bgcolor="#ffffff" align="left">
+
+            <!-- preheader -->
+            <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+              <tr>
+                <td align="left" style="padding:10px 30px;font-family:Arial,sans-serif;font-size:11px;line-height:11px;color:#4c4c4c;" class="hide">
+                  This game is awesome.
+                </td>
+                <td align="right" style="padding:10px 30px 10px 5%;font-family:Arial,sans-serif;font-size:11px;line-height:11px;color:#4c4c4c;" class="view-online">
+                  <a href="~PROBE(0)~" target="_blank" style="color:#4c4c4c;text-decoration:none;">View online &#10095;</a>
+                </td>
+              </tr>
+            </table>
+            <!-- end preheader -->
+
+            <!-- top bar - magenta -->
+            <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+              <tr>
+                <td width="50%" align="left" style="background-color:#e20074; padding-left:30px; padding-top: 3px !important; padding-bottom: 3px !important;" class="fluid-padding">
+                  <a href="https://www.t-mobile.com" target="_blank">
+                    <img src="img/tmobile_logo_magenta.png" width="160" alt="T-Mobile" border="0" style="display:block;" class="img-logo" />
+                  </a>
+                </td>
+              </tr>
+            </table>
+            <!-- end top bar - magenta -->
+
+            <!-- game -->
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td align="center" bgcolor="#000000">
+
+                  <!-- checkbox to hide game in Outlook app -->
+                  <input checked="checked" type="checkbox" id="master-control" name="master-control" style="display: none!important; max-height: 0 !important; visibility: hidden !important;padding:0 0 0 0 !important;margin:0 0 0 0 !important;font-size:0 !important;line-height:0;width:0 !important;height:0 !important;float:left !important;position: absolute;top:-9999px;" />
+
+                  <!--[if !mso]><\!-->
+                  <!-- game wrapper -->
+                  <div id="game-wrapper" style="display:none;max-width:0;max-height:0;mso-hide:all;">
+
+                    <!-- checkboxes and radio buttons -->
+                    <!--[if !mso]><!-->
+                    <input id="button-start" type="checkbox" style="width:0;position:absolute;top:-9999px;overflow:hidden;max-height:0;display:none !important;visibility:hidden;">
+                    <input id="button-2a" type="checkbox" style="width:0;position:absolute;top:-9999px;overflow:hidden;max-height:0;display:none !important;visibility:hidden;">
+                    <input id="button-2b" type="checkbox" style="width:0;position:absolute;top:-9999px;overflow:hidden;max-height:0;display:none !important;visibility:hidden;">
+
+                    <input id="button-3a" type="checkbox" style="width:0;position:absolute;top:-9999px;overflow:hidden;max-height:0;display:none !important;visibility:hidden;">
+                    <input id="button-3m" type="checkbox" style="width:0;position:absolute;top:-9999px;overflow:hidden;max-height:0;display:none !important;visibility:hidden;">
+                    <input id="button-3b" type="checkbox" style="width:0;position:absolute;top:-9999px;overflow:hidden;max-height:0;display:none !important;visibility:hidden;">
+
+                    <input id="button-4a" type="checkbox" style="width:0;position:absolute;top:-9999px;overflow:hidden;max-height:0;display:none !important;visibility:hidden;">
+                    <input id="button-4b" type="checkbox" style="width:0;position:absolute;top:-9999px;overflow:hidden;max-height:0;display:none !important;visibility:hidden;">
+                    <input id="button-4c" type="checkbox" style="width:0;position:absolute;top:-9999px;overflow:hidden;max-height:0;display:none !important;visibility:hidden;">
+                    <input id="button-4d" type="checkbox" style="width:0;position:absolute;top:-9999px;overflow:hidden;max-height:0;display:none !important;visibility:hidden;">
+
+                    <input id="button-end1" type="checkbox" style="width:0;position:absolute;top:-9999px;overflow:hidden;max-height:0;display:none !important;visibility:hidden;">
+                    <input id="button-end2" type="checkbox" style="width:0;position:absolute;top:-9999px;overflow:hidden;max-height:0;display:none !important;visibility:hidden;">
+                    <input id="button-end3" type="checkbox" style="width:0;position:absolute;top:-9999px;overflow:hidden;max-height:0;display:none !important;visibility:hidden;">
+                    <input id="button-end4" type="checkbox" style="width:0;position:absolute;top:-9999px;overflow:hidden;max-height:0;display:none !important;visibility:hidden;" />
+                    <input id="button-end5" type="checkbox" style="width:0;position:absolute;top:-9999px;overflow:hidden;max-height:0;display:none !important;visibility:hidden;" />
+                    <input id="button-end6" type="checkbox" style="width:0;position:absolute;top:-9999px;overflow:hidden;max-height:0;display:none !important;visibility:hidden;" />
+
+                    <input id="button-tie" type="checkbox" style="width:0;position:absolute;top:-9999px;overflow:hidden;max-height:0;display:none !important;visibility:hidden;">
+                    <!--<![endif]-->
+
+                    <!-- start screen -->
+                    <div id="game-start" style="mso-hide:all;">
+                      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                          <td align="center" valign="top" style="font-family:Arial,sans-serif;font-size:30px;line-height:30px;color:#e20074;padding:10% 0 7% 0;font-weight:bold;" class="text-headline">
+                            WELCOME!
+                          </td>
+                        </tr>
+                      </table>
+                      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                          <td align="center" valign="top">
+
+                            <div class="text-body" style="font-family:Arial,sans-serif;font-size:16px;line-height:21px;color:#ffffff;padding:0 0 10% 0;">Test your knowledge of safe link sharing. Complete the challenges with a score from 7&#8209;10 to win! If you finish with 3 or less, you lose. Good&nbsp;luck!</div>
+
+                          </td>
+                        </tr>
+
+                        <!-- CTA -->
+                        <tr>
+                          <td align="center">
+                            <table cellpadding="0" cellspacing="0" border="0" role="presentation">
+                              <tr>
+                                <td align="center" width="210" style="background-color:#e20074;overflow:auto;"> <!-- set width for Outlook --> 
+                                  <label for="button-start" style="background-color:#e20074;border:2px solid #e20074;color:#ffffff;display:inline-block;font-family:Arial,sans-serif;font-size:16px;font-weight:bold;line-height:40px;text-align:center;text-decoration:none;width:180px;-webkit-text-size-adjust:none;mso-hide:all;">Start the game!</label>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+
+                    <!-- question wrapper  -->
+                    <div id="game-questions-wrapper">
+
+                      <!-- game status icons -->
+                      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                          <td valign="bottom" style="position:relative;">
+                            <div class="icon-container">
+                              <img src="https://tmoassets.blob.core.windows.net/18053-game/icon_popularity.png" alt="Popularity" width="100%" style="display:block;" border="0" />
+                              <div class="icon-bar-container">
+                                <div class="icon-bar_bg"></div>
+                                <div id="icon_popularity_bar" class="icon-bar"></div>
+                              </div>
+                              <div class="icon-bar-container_value" id="popularity_value">
+                                <p style="font-family:Arial,sans-serif;font-size:16px;line-height:16px;color:#ffffff;"></p>
+                              </div>
+                            </div>
+                          </td>
+                          <td valign="bottom" align="center" style="position:relative;">
+                            <div class="icon-container">
+                              <img src="https://tmoassets.blob.core.windows.net/18053-game/icon_health.png" alt="Health" width="100%" style="display:block;" border="0">
+                              <div class="icon-bar-container">
+                                <div class="icon-bar_bg"></div>
+                                <div id="icon_health_bar" class="icon-bar"></div>
+                              </div>
+                              <div class="icon-bar-container_value" id="health_value">
+                                <p style="font-family:Arial,sans-serif;font-size:16px;line-height:16px;color:#ffffff;"></p>
+                              </div>
+                            </div>
+                          </td>
+                          <td valign="bottom" align="right" style="position:relative;">
+                            <div class="icon-container">
+                              <img src="https://tmoassets.blob.core.windows.net/18053-game/icon_safety.png" alt="Safety" width="100%" style="display:block;" border="0">
+                              <div class="icon-bar-container">
+                                <div class="icon-bar_bg"></div>
+                                <div id="icon_safety_bar" class="icon-bar"></div>
+                              </div>
+                              <div class="icon-bar-container_value" id="safety_value">
+                                <p style="font-family:Arial,sans-serif;font-size:16px;line-height:16px;color:#ffffff;"></p>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                      </table>
+                      <!-- end game status icons -->
+
+                      <!-- game text - filled with css content property -->
+                      <div id="game-questions-text">
+                        <p></p>
+                      </div>
+                      <!-- end game text -->
+
+                      <!-- question 1 -->
+                      <div id="question1">
+
+                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td valign="bottom">
+                              <div class="button-label">
+                                <label for="button-2a">
+                                  <img src="https://tmoassets.blob.core.windows.net/18053-game/button_beware.png" alt="Beware" width="100%" style="display:block;" border="0" />
+                                </label>
+                              </div>
+                            </td>
+                            <td valign="bottom" align="right">
+                              <div class="button-label">
+                                <label for="button-2b">
+                                  <img src="https://tmoassets.blob.core.windows.net/18053-game/button_share.png" alt="Share" width="100%" style="display:block;" border="0" />
+                                </label>
+                              </div>
+                            </td>
+                          </tr>
+                        </table>
+
+                      </div>
+                      <!-- end question 1 -->
+
+                      <!-- question 2a -->
+                      <div id="question2a" class="game-questions">
+
+                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td valign="bottom">
+                              <div class="button-label">
+                                <label for="button-3a">
+                                  <img src="https://tmoassets.blob.core.windows.net/18053-game/button_beware.png" alt="Beware" width="100%" style="display:block;" border="0" />
+                                </label>
+                              </div>
+                            </td>
+                            <td valign="bottom" align="right">
+                              <div class="button-label">
+                                <label for="button-3m">
+                                  <img src="https://tmoassets.blob.core.windows.net/18053-game/button_share.png" alt="Share" width="100%" style="display:block;" border="0" />
+                                </label>
+                              </div>
+                            </td>
+                          </tr>
+                        </table>
+
+                      </div>
+                      <!-- end question 2a -->
+
+                      <!-- question 2b -->
+                      <div id="question2b" class="game-questions">
+
+                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td valign="bottom">
+                              <div class="button-label">
+                                <label for="button-3m">
+                                  <img src="https://tmoassets.blob.core.windows.net/18053-game/button_beware.png" alt="Beware" width="100%" style="display:block;" border="0" />
+                                </label>
+                              </div>
+                            </td>
+                            <td valign="bottom" align="right">
+                              <div class="button-label">
+                                <label for="button-3b">
+                                  <img src="https://tmoassets.blob.core.windows.net/18053-game/button_share.png" alt="Share" width="100%" style="display:block;" border="0" />
+                                </label>
+                              </div>
+                            </td>
+                          </tr>
+                        </table>
+
+                      </div>
+                      <!-- end question 2b -->
+
+                      <!-- question 3a -->
+                      <div id="question3a" class="game-questions">
+
+                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td valign="bottom">
+                              <div class="button-label">
+                                <label for="button-4a">
+                                  <img src="https://tmoassets.blob.core.windows.net/18053-game/button_beware.png" alt="Beware" width="100%" style="display:block;" border="0" />
+                                </label>
+                              </div>
+                            </td>
+                            <td valign="bottom" align="right">
+                              <div class="button-label">
+                                <label for="button-4b">
+                                  <img src="https://tmoassets.blob.core.windows.net/18053-game/button_share.png" alt="Share" width="100%" style="display:block;" border="0" />
+                                </label>
+                              </div>
+                            </td>
+                          </tr>
+                        </table>
+
+                      </div>
+                      <!-- end question 3a -->
+
+                      <!-- question 3m -->
+                      <div id="question3m" class="game-questions">
+
+                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td valign="bottom">
+                              <div class="button-label">
+                                <label for="button-4b">
+                                  <img src="https://tmoassets.blob.core.windows.net/18053-game/button_beware.png" alt="Beware" width="100%" style="display:block;" border="0" />
+                                </label>
+                              </div>
+                            </td>
+                            <td valign="bottom" align="right">
+                              <div class="button-label">
+                                <label for="button-4c">
+                                  <img src="https://tmoassets.blob.core.windows.net/18053-game/button_share.png" alt="Share" width="100%" style="display:block;" border="0" />
+                                </label>
+                              </div>
+                            </td>
+                          </tr>
+                        </table>
+
+                      </div>
+                      <!-- end question 3b -->
+
+                      <!-- question 3b -->
+                      <div id="question3b" class="game-questions">
+
+                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td valign="bottom">
+                              <div class="button-label">
+                                <label for="button-4c">
+                                  <img src="https://tmoassets.blob.core.windows.net/18053-game/button_beware.png" alt="Beware" width="100%" style="display:block;" border="0" />
+                                </label>
+                              </div>
+                            </td>
+                            <td valign="bottom" align="right">
+                              <div class="button-label">
+                                <label for="button-4d">
+                                  <img src="https://tmoassets.blob.core.windows.net/18053-game/button_share.png" alt="Share" width="100%" style="display:block;" border="0" />
+                                </label>
+                              </div>
+                            </td>
+                          </tr>
+                        </table>
+
+                      </div>
+                      <!-- end question 3b -->
+
+                      <!-- question 4a -->
+                      <div id="question4a" class="game-questions">
+
+                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td valign="bottom">
+                              <div class="button-label">
+                                <label for="button-end1">
+                                  <img src="https://tmoassets.blob.core.windows.net/18053-game/button_beware.png" alt="Beware" width="100%" style="display:block;" border="0" />
+                                </label>
+                              </div>
+                            </td>
+                            <td valign="bottom" align="right">
+                              <div class="button-label">
+                                <label for="button-end2">
+                                  <img src="https://tmoassets.blob.core.windows.net/18053-game/button_share.png" alt="Share" width="100%" style="display:block;" border="0" />
+                                </label>
+                              </div>
+                            </td>
+                          </tr>
+                        </table>
+
+                      </div>
+                      <!-- end question 4a -->
+
+                      <!-- question 4b -->
+                      <div id="question4b" class="game-questions">
+
+                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td valign="bottom">
+                              <div class="button-label">
+                                <label for="button-end2">
+                                  <img src="https://tmoassets.blob.core.windows.net/18053-game/button_beware.png" alt="Beware" width="100%" style="display:block;" border="0" />
+                                </label>
+                              </div>
+                            </td>
+                            <td valign="bottom" align="right">
+                              <div class="button-label">
+                                <label for="button-tie">
+                                  <img src="https://tmoassets.blob.core.windows.net/18053-game/button_share.png" alt="Share" width="100%" style="display:block;" border="0" />
+                                </label>
+                              </div>
+                            </td>
+                          </tr>
+                        </table>
+
+                      </div>
+                      <!-- end question 4b -->
+
+                      <!-- question 4c -->
+                      <div id="question4c" class="game-questions">
+
+                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td valign="bottom">
+                              <div class="button-label">
+                                <label for="button-tie">
+                                  <img src="https://tmoassets.blob.core.windows.net/18053-game/button_beware.png" alt="Beware" width="100%" style="display:block;" border="0" />
+                                </label>
+                              </div>
+                            </td>
+                            <td valign="bottom" align="right">
+                              <div class="button-label">
+                                <label for="button-end3">
+                                  <img src="https://tmoassets.blob.core.windows.net/18053-game/button_share.png" alt="Share" width="100%" style="display:block;" border="0" />
+                                </label>
+                              </div>
+                            </td>
+                          </tr>
+                        </table>
+
+                      </div>
+                      <!-- end question 4c -->
+
+                      <!-- question 4d -->
+                      <div id="question4d" class="game-questions">
+
+                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td valign="bottom">
+                              <div class="button-label">
+                                <label for="button-end3">
+                                  <img src="https://tmoassets.blob.core.windows.net/18053-game/button_beware.png" alt="Beware" width="100%" style="display:block;" border="0" />
+                                </label>
+                              </div>
+                            </td>
+                            <td valign="bottom" align="right">
+                              <div class="button-label">
+                                <label for="button-end4">
+                                  <img src="https://tmoassets.blob.core.windows.net/18053-game/button_share.png" alt="Share" width="100%" style="display:block;" border="0" />
+                                </label>
+                              </div>
+                            </td>
+                          </tr>
+                        </table>
+
+                      </div>
+                      <!-- end question 4d -->
+
+                      <!-- TIEBREAKER -->
+                      <!-- question tie -->
+                      <div id="question-tie" class="game-questions">
+
+                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td valign="bottom">
+                              <div class="button-label">
+                                <label for="button-end5">
+                                  <img src="https://tmoassets.blob.core.windows.net/18053-game/button_beware.png" alt="Beware" width="100%" style="display:block;" border="0" />
+                                </label>
+                              </div>
+                            </td>
+                            <td valign="bottom" align="right">
+                              <div class="button-label">
+                                <label for="button-end6">
+                                  <img src="https://tmoassets.blob.core.windows.net/18053-game/button_share.png" alt="Share" width="100%" style="display:block;" border="0" />
+                                </label>
+                              </div>
+                            </td>
+                          </tr>
+                        </table>
+
+                      </div>
+                      <!-- end question tie -->
+
+                    </div>
+                    <!-- end question wrapper -->
+
+                  </div>
+                  <!-- end game wrapper -->
+
+                  <!-- <![endif]-->
+                  <!-- game fallback -->
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" id="game-fallback">
+                    <tr>
+                      <td bgcolor="#000000" align="center" style="padding: 30px 0;">
+                        <img src="https://tmoassets.blob.core.windows.net/18053-game/game_fallback.png" width="400" alt="" border="0" style="display:block;" class="img-fluid" />
+                      </td>
+                    </tr>
+                  </table>
+                  <!-- end game fallback -->
+
+                </td>
+              </tr>
+            </table>
+            <!-- end game -->
+
+            <!-- lock up -->
+            <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+              <tr>
+                <td align="center" style="background-color:#ffffff; padding:5px 0;">
+                  <img src="img/lockup-most-loved-white.gif" width="414" alt="America's Most Loved Wireless. &#124; T-Mobile." border="0" style="display:block;" class="img-fluid" />
+                </td>
+              </tr>
+            </table>
+            <!-- end lock up -->
+
+            <!-- legal footer -->
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td style="background-color:#e8e8e8; padding: 25px 30px;" class="fluid-padding">
+
+                  <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td style="font-family:Arial,sans-serif;font-size:11px;line-height:16px;color:#4c4c4c;" align="left">
+                        Legal text T&#8209;Mobile and the magenta color are registered trademarks of Deutsche Telekom AG. &copy;2018 T&#8209;Mobile USA, Inc.
+                        <br />
+                        <br />
+                        To ensure future delivery of emails, please add <a href="mailto:news@t-mobile-email.com?subject=No%20Reply&body=No%20Reply" target="_blank" style="color:#4c4c4c; text-decoration:underline;">news@t&#8209;mobile&#8209;email.com</a> to your safe sender list or address&nbsp;book.
+                        <br />
+                        <br />
+                        This email was sent to <a href="mailto:~MAIL~" style="color:#4c4c4c; text-decoration:underline;">~MAIL~</a>. If you've received this message in error, or if you prefer not to receive future promotional email messages from T&#8209;Mobile, please <a href="http://www.t-mobile.com/company/website/OptOut.aspx?type=1" target="_blank" style="color:#4c4c4c; text-decoration:underline;">unsubscribe</a>.
+                        <br />
+                        <br />
+                        T&#8209;Mobile USA, Inc., <span style="text-decoration: none !important; color:#4c4c4c !important;" class="phonefix">P.O. Box 37380, Albuquerque, NM 87176</span>
+                        <br />
+                        <br />
+                        T&#8209;Mobile respects your privacy. To review our Privacy Policy, <a href="https://www.t-mobile.com/responsibility/privacy/privacy-policy?cmpid=CRM_EM_EMAIL_9D69FUWX8Y1IEE0PH47400" target="_blank" style="color:#4c4c4c; text-decoration:underline;">click&nbsp;here</a>.
+                      </td>
+                    </tr>
+                  </table>
+
+                </td>
+              </tr>
+            </table>
+            <!-- end legal footer -->
+
+          </td>
+        </tr>
+      </table>
+      <!-- end wrapper table -->
+
+    </td>
+	</tr>
+</table>
+</body>
+</html>
